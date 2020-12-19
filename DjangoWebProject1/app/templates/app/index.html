@@ -1,0 +1,102 @@
+{% extends "app/layout.html" %}
+
+{% load staticfiles %}
+
+
+
+{% block content %}
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+        <div class="item active" style="background-color:lightgray">
+            <img src="{% static 'app/content/cat1.jpg'%} " alt="Первый слайд" class="img-responsive" style="height:200px;" />
+            <div class="carousel-caption" role="option">
+                <p>
+                    <p class="car_text">Регдолл</p>
+                    <a class="btn btn-default" href="https://cat.mau.ru/rag/">
+                        Читать далее
+                    </a>
+                </p>
+            </div>
+        </div>
+
+        <div class="item " style="background-color:lightgray">
+            <img src="{% static 'app/content/cat2.jpg'%} " alt="Первый слайд" class="img-responsive" style="height:200px;" />
+            <div class="carousel-caption" role="option">
+                <p>
+                    <p class="car_text">Турецкая ангора</p>
+                    <a class="btn btn-default" href="https://cat.mau.ru/tua/">
+                        Читать далее
+                    </a>
+                </p>
+            </div>
+        </div>
+
+        <div class="item " style="background-color:lightgray">
+            <img src="{% static 'app/content/cat3.jpg'%} " alt="Первый слайд" class="img-responsive" style="height:200px;" />
+            <div class="carousel-caption" role="option">
+                <p>
+                    <p class="car_text">Оцикет</p>
+                    <a class="btn btn-default" href="https://cat.mau.ru/oci/">
+                        Читать далее
+                    </a>
+                </p>
+            </div>
+        </div>
+
+
+    </div>
+
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+
+</div>
+
+
+
+<div class="jumbotron">
+    <h1 style="color:darkmagenta">Это онлайн журнал о котиках</h1>
+    <p class="lead">
+Ко́шка дома́шняя (лат. Félis cátus) — хищное млекопитающее семейства кошачьих. Согласно генетическим исследованиям, все домашние кошки происходят от группы самостоятельно одомашнившихся лесных кошек подвида степная (ливийская) кошка (Felis silvestris lybica). 
+
+
+    </p>
+    <p><a style="background-color:darkmagenta;color:white" href="https://mau.ru/pub/food/?p=korma" class="btn btn-primary btn-large">Узнайте больше &raquo;</a></p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2 style="color:darkblue">Пять типoв поведения кошек</h2>
+        <p>Американские специалисты выделяют пять основных проблем, возникающих при воспитании кошки. К какому типу относится Ваша?
+        </p>
+        <p><a style="background-color:darkblue;color:white"class="btn btn-default" href="https://mau.ru/pub/psyho/?p=type">Узнайте больше &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2 style="color:darkgoldenrod">Кот дома один</h2>
+        <p>Вы когда-нибудь обращали внимание на выражение лица вашего кота, когда уходите на работу? Весь его вид говорит вам: "Я так от тебя устал, хотелось бы жить в одиночку, без моих человеческих рабов. Моя жизнь была бы намного лучше"! Такое выражение морды можно наблюдать каждый день.
+.</p>
+        <p><a style="background-color:darkgoldenrod;color:white"class="btn btn-default" href="https://mau.ru/relax/pix/home_alone_cat.php">Узнайте больше &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2 style="color:darkcyan">Кот Боб и пёс Бобби</h2>
+        <p>
+            «Два Бобби: достоверная история об урагане Катрина, дружбе и выживании» — так называется книга для детей, вышедшая в Нью-Йорке в 2008 году. Авторы книги Кирби Ларсон (Kirby Larson) и Мэри Несери (Mary Nethery) рассказали трогательную историю, произошедшую с котом и собакой во время самого разрушительного урагана в истории Америки.
+
+        </p>
+        <p><a style="background-color:darkcyan;color:white" class="btn btn-default" href="https://mau.ru/pub/misc/?p=bobbies">Узнайте больше &raquo;</a></p>
+    </div>
+</div>
+
+{% endblock %}
